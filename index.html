@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Smart Exoskeleton</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            <h1>Smart Exoskeleton</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><button class="cart-button" onclick="window.location.href='cart.html'">Cart</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h1>Revolutionizing Mobility</h1>
+        <p>Introducing the Smart Exoskeleton with Emotional Sensing</p>
+        <button class="cta-button" onclick="window.location.href='product.html'">Discover More</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to improving the lives of individuals with mobility challenges through innovative technology.</p>
+        <img src="images/team.jpg" alt="Our Team" />
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-card">
+            <img src="images/exoskeleton.jpg" alt="Exoskeleton Feature" />
+            <h3>Enhanced Mobility</h3>
+            <p>Provides support for walking, standing, and other movements.</p>
+        </div>
+        <div class="feature-card">
+            <img src="images/sensor.jpg" alt="Emotion Sensor" />
+            <h3>Emotional Sensing</h3>
+            <p>Adapts support levels based on detected emotional states.</p>
+        </div>
+        <div class="feature-card">
+            <img src="images/ai.jpg" alt="AI Integration" />
+            <h3>AI Integration</h3>
+            <p>Utilizes AI algorithms for personalized assistance.</p>
+        </div>
+        <div class="feature-card">
+            <img src="images/affordable.jpg" alt="Affordable Solution" />
+            <h3>Cost-effective</h3>
+            <p>Designed with affordability in mind without compromising quality.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <img src="images/testimonial.jpg" alt="Happy User" />
+            <p>"This exoskeleton has changed my life! I feel more independent than ever!"</p>
+            <span>- Jane Doe</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Exoskeleton. All rights reserved.</p>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Buy Now!</h2>
+            <p>Visit our store or contact us to make a purchase.</p>
+            <button onclick="hidePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Products - Smart Exoskeleton</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            <h1>Smart Exoskeleton</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><button class="cart-button" onclick="window.location.href='cart.html'">Cart</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-card">
+            <h3>Product 1</h3>
+            <p>Price: $100</p>
+            <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <h3>Product 2</h3>
+            <p>Price: $150</p>
+            <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <h3>Product 3</h3>
+            <p>Price: $200</p>
+            <button onclick="addToCart('Product 3', 200)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Exoskeleton. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
