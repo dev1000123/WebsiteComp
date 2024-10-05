@@ -9,34 +9,58 @@
 <body>
     <header>
         <div class="logo">
-            <a href="/"><img src="{{url_for("static",filename = "images/logo.jpg")}}" alt="Logo" /></a>
-            <h1>Smart Exoskeleton</h1>
+            <h1 onclick="window.location.href='/'">Smart Exoskeleton</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><button class="cart-button" onclick="window.location.href='/cart'">Cart</button></li>
+                <li><button class="cart-button" onclick="window.location.href='/cart'"><img src="{{url_for("static",filename="images/cart.png")}}"></button></li>
             </ul>
         </nav>
     </header>
 
     <section id="products">
-        <h2>Our Products</h2>
+        <center><h2>Our Products</h2></center>
         <div class="product-card">
-            <h3>Product 1</h3>
-            <p>Price: $100</p>
-            <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+            <img src="{{url_for("static",filename="images/1st.jpg")}}">
+            <h3>Basic Exoskeleton<br> ₹1,50,000</h3>
+            <div id="ftrs">
+            <b>Features</b>
+                <ul>
+                    <li>Lightweight design for easy wear</li>
+                    <li>Basic motion support for standing and walking</li>
+                    <li>Simple emotional sensing through basic sensors to detect stress</li>
+                </ul>            
+            </div>
+            <button id="prbtn" onclick="window.location.href='/add/2'">Add To Cart</button>
         </div>
         <div class="product-card">
-            <h3>Product 2</h3>
-            <p>Price: $150</p>
-            <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+            <img src="{{url_for("static",filename="images/2.jpg")}}">
+            <h3>Enhanced Exoskeleton<br> ₹1,80,000</h3>
+            <div id="ftrs">
+            <b>Features</b>
+            <ul>
+                <li>Enhanced mobility assistance, including stairs and uneven surfaces.</li>
+                <li>Advanced emotion-sensing technology for real-time mood detection</li>
+                <li>User-adjustable support levels based on emotional states.</li>
+            </ul>
+            </div>
+            <button id="prbtn">Add To Cart</button>
         </div>
         <div class="product-card">
-            <h3>Product 3</h3>
-            <p>Price: $200</p>
-            <button onclick="addToCart('Product 3', 200)">Add to Cart</button>
+            <img src="{{url_for("static",filename="images/3rd.jpg")}}">
+            <h3>Premium Exoskeleton<br> ₹1,99,000</h3>
+            <div id="ftrs">
+            <b>Features</b>
+            <ul>
+                <li>All features from Model A and B.</li>
+                <li>Full mobility assistance, including seated and standing transitions</li>
+                <li>Comprehensive emotional feedback system with a companion app for tracking emotional states</li>
+                <li>Integration with smart home devices for seamless living.</li>
+            </ul>
+            </div>
+            <button id="prbtn">Add To Cart</button>
         </div>
     </section>
 

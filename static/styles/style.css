@@ -1,4 +1,6 @@
-/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,54 @@ body {
     color: #333;
     overflow-x: hidden;
 }
-
+.product-card{
+    display: flex;
+    width: 100%;
+    background-color: #E0E0DE;
+    border-radius: 30px;
+    border: 5px black solid;
+    height: 300px;
+    
+    margin-bottom: 30px;
+}
+.product-card img{
+    height: 100%;
+    padding-left: 5%;
+}
+.product-card h3{
+    font-family: "Kanit", sans-serif;
+    margin-top: 8%;
+    margin-left: 30px;
+    width: 200px;
+}
+#ftrs{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+}
+#ftrs b{
+    font-size: xx-large;
+    font-family: "Kanit", sans-serif;
+}
+#ftrs ul{
+    margin-top: 15%;
+}
+#ftrs ul li{
+    font-family: "Kanit", sans-serif
+}
+.product-card #prbtn{
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 8%;
+    background-color: #ff6f61;
+    border-radius: 50px;
+    width: 100px;
+}
+.product-card #prbtn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 /* Header */
 header {
     background: linear-gradient(45deg, #4facfe, #00f2fe);
@@ -32,30 +81,32 @@ header .logo {
     align-items: center;
 }
 
-header .logo img {
-    width: 50px;
-    margin-right: 10px;
-}
-
 header h1 {
-    font-size: 28px;
+    font-size: 40px;
     letter-spacing: 2px;
+    font-family: "Protest Strike", sans-serif;
+    cursor: pointer;
+    padding-left: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    
 }
 
 nav ul li {
     margin: 0 20px;
+    
 }
 
 nav ul li a {
+    
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -94,7 +145,7 @@ nav ul li button:hover {
 .hero {
     background: url('../images/abc.jpg') no-repeat center center/cover;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -104,43 +155,31 @@ nav ul li button:hover {
 
 .hero::before {
     content: '';
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     color: #ffffff; /* Add overlay if needed for better readability */
 }
 
 .hero h1 {
+    
     font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     animation: fadeInDown 1s ease;
+    font-family: 'Oswald',sans-serif;
 }
 
 .hero p {
     font-size: 22px;
-    margin-bottom: 30px;
+    
     animation: fadeInUp 1s ease;
+    font-family: 'Oswald',sans-serif;
 }
 
-.hero .cta-button {
-    background-color: #ff6f61;
-    color: white;
-    padding: 15px 40px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero .cta-button:hover {
-    background-color: #ff3b2e;
-    transform: translateY(-5px);
-}
 
 
 /* Keyframe Animations */
@@ -328,6 +367,12 @@ nav ul li button:hover {
     margin-bottom: 20px;
 }
 
+.cart-button img{
+    
+    height: 40px;
+    width: 40px;
+}
+
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -360,7 +405,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    
     width: 100%;
     bottom: 0;
 }

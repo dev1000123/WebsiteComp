@@ -9,15 +9,13 @@
 <body>
     <header>
         <div class="logo">
-            <a href="/"><img src="{{url_for("static",filename = "images/logo.jpg")}}" alt="Logo" /></a>
-            <h1>Smart Exoskeleton</h1>
+            <h1 onclick="window.location.href='/'">Smart Exoskeleton</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/products">Products</a></li>
-                <li><button class="cart-button" onclick="window.location.href='/cart'">Cart</button></li>
-            </ul>
+                <li><button class="cart-button" onclick="window.location.href='/cart'"><img src="{{url_for("static",filename="images/cart.png")}}"></button></li>
         </nav>
     </header>
 

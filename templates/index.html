@@ -9,8 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="/"><img src="{{url_for("static",filename = "images/logo.png")}}" alt="Logo" /></a>
-            <h1>Smart Exoskeleton</h1>
+            <h1 onclick="window.location.href='/'">Smart Exoskeleton</h1>
         </div>
         <nav>
             <ul>
@@ -18,11 +17,12 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="/products">Products</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><button class="cart-button" onclick="window.location.href='/cart'">Cart</button></li>
+                <li><button class="cart-button" onclick="window.location.href='/cart'"><img src="{{url_for("static",filename="images/cart.png")}}"></button></li>
             </ul>
         </nav>
     </header>
     <section class="hero" id="home">
+        <br><br><br><br><br><br><br><br><br><br>
         <h1>Revolutionizing Mobility</h1>
         <p>Introducing the Smart Exoskeleton with Emotional Sensing</p>
         
