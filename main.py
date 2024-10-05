@@ -18,10 +18,15 @@ def products():
     return pr
 
 @app.route('/add/<i>',methods=["GET","SET"])
-def add_item(i):
-    c = session.get("cost")
-    if i == 1:
-        c
+def add_item(item):
+    c = request.cookies.get("items")
+    a_l = c.split(",")
+    a_l = [i.split(':') for i in a_l]
+    
+    prods = {}
+    for i in a_l:
+        prods.update({int(i[0]):int(i[1])})
+    prods[i]+=1
     session.update("cost",)
     return(redirect("/products"))
 
